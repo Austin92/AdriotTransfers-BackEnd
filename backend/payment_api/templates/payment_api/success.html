@@ -1,0 +1,13 @@
+{% extends 'payment_api/template.html' %}
+{% load static %}
+{% block content %}
+
+<div id="box">
+    <img id="succes-icon" src="{% static 'images/check.png' %}">
+    <h4>Thank you for using AdriotTransfers</h4>
+    <h3>Your payment of ${{amount}} is successful!</h3>
+    <hr>
+    <a class="myButton" href="{% url 'index' %}">&#x2190;Back to payment page</a>
+</div>
+
+{% endblock content %}
